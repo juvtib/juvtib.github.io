@@ -2,10 +2,72 @@
 <html lang="en">
 <head>
 <title>My PowerShell Notes | juvtib.github.io</title>
+<link href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAIQUExURQEkVihEa2R2i3yJmGd4jB88ZgYoWV9xiM7Mw//13frx24CNmgIlVgQnWNPR
+xXSDk0lffKarrd/bzO/o1MzLwmt8jwQmWCpGbICMmb7Au+Dcza+zskNaeYqVn7u9ucPEvf713XyJ
+lxY1YfPr1/703EJaeYmUnrS3tdzYym5+kPrx2vLq1gIlVzJMcAUnWO7n1Pbt2Oji0e/o1fPr1nmH
+lixHbebh0HiGlRc2YiE+ZwIkVvvx26CnqgkqWpSdpH6LmB48ZRAwXpCZovzy252kqY+ZoSlFa56l
+qqetrvjv2Udee15wh/703Zqip8XFvt7azGh5jT5Wdg0uXOXgz8DBu46YoRw7ZRs5ZIKOmgssW56l
+qba5tvHq1gMmVy9Kb3B/kSxIbXuIl+LdzcvKwUZde1puhk9lgFhrhBQ0YJ+mqmFziXGAkjVPckRb
+en+MmSZCapGaoj9Xd6KprPvy2worW6uwsAMlV7O2tPzz2w0uXcrJwb/Au9zYy9HPxAUoWPTs17i7
+t8/NwzpTdDBLb8bGv9XSx1JmgXOCk1Vpg7C0s/fu2RU1YQgqWufh0Pfv2Q8wXRg3YoSQm87Nw1Bl
+gLG1s8rKwTdQc2x8j0FYeMHCvE5kf+vl0m9/kb6/utzZywcpWUJZeMLDvNjVyA4vXXqIluzl0/Hp
+1hExXyA+ZuTfz1tuhg8wXh89ZsTEvtDOxBk4Y/dvHcAAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHO
+SURBVDhPjZL5V4xxFIcfS3jtRUmLZRoig2jIXiFLZSmVrWxZUrayFiWRyJLsWyTKFv7Fvve+dzjM
+4fj88nyWO3PmvO/wXxoydNjwGPPRGjFylOc0esxYK/7QuPEyiyZMjI2bNDk+gSmJU5PiklPsgFTb
+I5o23eeMmXYQSPOLKAVn2cVsK6KUbgeBtDlzM6z7TfNCdjF/AQv9KtOHl7FIEbADp8WSs8JLtF+a
+vSysZrmtsGKl5FWs1n4N5KjJtRnyNK+FdcL1kK9Fns2wQXMY9MduhE3Czb+ebYFkr5BQkXALbBVu
+s9Vpu2SvmBJlPuwQltrqVKZDOTuVu9gdFO6x1Wmv5IpK9gm9/RxQHrTV6ZDkKjiswxGOKo/ZCtX6
+jcehRocUapUnbIaTmmvhlJrTnFFW2wz+g62DeuHZc5wXZl2wGS5KvtQAjWKS4LLwiq2QoO+yCZqv
+immxw2s2Q6tEeUXX1aTCDWGbzZF/5U1oV3MLbgs77th+957E+51QJSb4ALrEeA/t4JGmx1Cs5omr
+nqp75u/w/IVLL6Ek+5Uzr6XqdubNW11VPe96K4XvP/T1fxTz6bPnfRHzU5H/59cenwPfvutH/q7Q
+DzP/FgwCcKFROpef25cAAAAASUVORK5CYII=" rel="icon" >
 </head>
 <body>
 
 <h1>My PowerShell Notes</h1>
+
+<h2>Turing Machine</h2>
+	<p>A physical example of a Turing machine. </p>
+	<ul>
+	  <li><a href="https://www.youtube.com/watch?v=E3keLeMwfHY" rel="noopener">A Turing Machine - Overview - YouTube</a></li>
+	</ul>
+	<p>Created: Sunday, February 7, 2021</p>
+	<p>Modified: Sunday, February 7, 2021</p>
+
+<h2>Favicon</h2>
+	<p>To add a favicon for your HTML page, add a <code>link</code> tag to the <code>head</code> element. You will need to include the <code>rel="icon"</code> attribute.</p>
+	<ul>
+	  <li><a href="https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website" rel="noopener">How to add a browser tab icon (favicon) for a website? - Stack Overflow</a></li>
+	</ul>
+	<p>You also need to specify an image. I wasn't interested in linking to an image. Instead, I wanted to embed the image using base64 encoding. This will put the data for the image directly in the page source. This is possible because of the <code>data</code> URI scheme. And it is a practical solution because a favicon is small and its encoded data will not take much space in the printed source code. </p>
+	<ul>
+	  <li><a href="https://stackoverflow.com/questions/47533358/base64-icons-favicon" rel="noopener">Base64 icons favicon - Stack Overflow</a></li>
+	  <li><a href="https://stackoverflow.com/questions/8499633/how-to-display-base64-images-in-html" rel="noopener">How to display Base64 images in HTML? - Stack Overflow</a></li>
+	  <li><a href="https://en.wikipedia.org/wiki/Data_URI_scheme" rel="noopener">data URI scheme - Wikipedia</a></li>
+	</ul>
+	<p>To create the base64 data, you need to encode an image. I found a link to a client-side encoder which will allow you to specify a file and then it will present that file's encoded text. </p>
+	<p><i>Make sure to uncheck "Automatically generate download link"</i>. </p>
+	<p>When the encoder is finished processing, you can copy the result from the text box and paste it after "data:image/png;base64," The value for the <code>href=</code> attribute must appear between double quotes. That includes the base64 data you are adding. Make sure to keep the trailing double quote for the <code>href=</code> attribute. </p>
+	<p>base64 encoding ignores line breaks. So, I suggest pasting the data on a new line and keeping the embedded breaks from the encoder. </p>
+	<ul>
+	  <li><a href="https://www.opinionatedgeek.com/Codecs/Base64Encoder" rel="noopener">Base 64 Encoder (100% client-side) :: OpinionatedGeek</a></li>
+	</ul>
+	<p>If you are creating an image from scratch, I created a 400x400 pixel image and used that for editing. When I was done, I saved a copy and resized that to 32x32 pixels. I used the 32x32 image as input for the encoder. I used Paint.NET for editing. </p>
+	<ul>
+	  <li><a href="https://www.getpaint.net/" rel="noopener">Paint.NET - Free Software for Digital Photo Editing</a></li>
+	</ul>
+	<p>My final <code>link</code> tag has the following form. Keep in mind you have the option of linking to an image file for <code>href=</code> instead of using base64 encoding. </p>
+	<pre>&#x3C;link href=&#x22;data:image/png;base64,
+&#x3C;!-- base64 data --&#x3E;&#x22; rel=&#x22;icon&#x22; &#x3E;
+</pre>
+	<p>Displaying HTML code on a Web page requires using HTML entities for reserved characters. Using an <i>HTML entity</i> encoder makes this work faster and the output more reliable. I was able to encode my <code>link</code> example using Mothereff.in.</p>
+	<ul>
+	  <li><a href="https://mothereff.in/html-entities" rel="noopener">HTML entity encoder/decoder</a></li>
+	</ul>
+	<p>Created: Sunday, February 7, 2021</p>
+	<p>Modified: Sunday, February 7, 2021</p>
 
 <h2>Firefox Reload and Override Cache</h2>
 	<p><code>Shift + Reload Button</code> bypasses the cache if you're using the mouse. You can also use <code>Ctrl + Shift + R</code> or <code>Ctrl + F5</code>. </p>
