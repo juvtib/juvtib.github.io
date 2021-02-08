@@ -8,6 +8,35 @@
 
 <h1>My PowerShell Notes</h1>
 
+<h2>Get-Command Includes the File Location for External Executables </h2>
+	<p>I am accustomed to PowerShell listing the assembly under Source for built-in cmdlets. I didn't realize that it will show the location on disc for external executables. </p>
+
+<pre>&#x3E; get-command pwsh | format-list
+
+Name            : pwsh.exe
+CommandType     : Application
+Definition      : <mark>C:\Program Files\PowerShell\7\pwsh.exe</mark>
+Extension       : .exe
+Path            : C:\Program Files\PowerShell\7\pwsh.exe
+FileVersionInfo : File:             C:\Program Files\PowerShell\7\pwsh.exe
+                  InternalName:     pwsh.dll
+                  OriginalFilename: pwsh.dll
+                  FileVersion:      7.1.1.0
+                  FileDescription:  pwsh
+                  Product:          PowerShell
+                  ProductVersion:   7.1.1 SHA:
+                  adab3212a903db48a665eb29ccb0615b23a7d320
+                  Debug:            False
+                  Patched:          False
+                  PreRelease:       False
+                  PrivateBuild:     False
+                  SpecialBuild:     False
+                  Language:         Language Neutral
+</pre>
+
+	<p>Created: Monday, February 8, 2021</p>
+	<p>Modified: Monday, February 8, 2021</p>
+
 <h2>Turing Machine</h2>
 	<p>A physical example of a Turing machine. </p>
 	<ul>
