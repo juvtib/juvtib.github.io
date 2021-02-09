@@ -8,6 +8,26 @@
 
 <h1>My PowerShell Notes</h1>
 
+<h2>Note Bookmarklet</h2>
+	<p>Sometimes it would be nice to add a note directly to a Web browser. Using this JavaScript bookmarklet, it is possible to add a note. You can use this to track the purpose of a particular window. I'll also drag a note tab along the tab bar to separate read and unread tabs. </p>
+	<p>Create a new, empty bookmark and save the following code to the "address" field. I suggest naming the bookmark "Page Note". Open a new Web browser tab. Click the bookmark. A window will open prompting for text. Whatever you type will be used as the title and heading for the tab. In this way you can type directly into the browser. </p>
+	<p>Feel free to update the code to change the default message. </p>
+	<p>Also, the URL in the address bar is not changed by this code. If you use this bookmarklet on an existing page and want to retrieve the original page contents, refresh the page. </p>
+<pre>javascript:{
+  var note = prompt(&#x22;Please enter your note:&#x22;, &#x22;Default Message&#x22;);
+  if (note == null || note == &#x22;&#x22;) {
+    (function(){})();
+  } else {
+    &#x22;&#x3C;html&#x3E;&#x3C;head&#x3E;&#x3C;title&#x3E;&#x22; + 
+      note + 
+      &#x22;&#x3C;/title&#x3E;&#x3C;/head&#x3E;&#x3C;body&#x3E;&#x3C;h1&#x3E;&#x22; + 
+      note + 
+      &#x22;&#x3C;/h1&#x3E;&#x3C;/body&#x3E;&#x3C;/html&#x3E;&#x22;; 
+  } 
+}</pre>
+	<p>Created: Tuesday, February 9, 2021</p>
+	<p>Modified: Tuesday, February 9, 2021</p>
+
 <h2>Emmet</h2>
 	<p>Emmet is a plugin for many popular text editors which greatly improves HTML &amp; CSS workflow</p>
 	<ul>
