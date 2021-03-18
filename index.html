@@ -13,6 +13,16 @@
 
 <h1>My PowerShell Notes</h1>
 
+<h2>HTML Link Bookmarklet</h2>
+	<p>Use this bookmarklet to generate an HTML &#x3C;a&#x3E; tag containing the title and URL for the current page. To cope with HTML entities, the bookmarklet directly copies the &#x3C;title&#x3E; source. Note this doesn&#x27;t fix any HTML escaping errors present in the source. </p>
+<pre>javascript:(function(){
+  var myText = &#x27;&#x3C;a href=&#x22;&#x27; + window.location.href + &#x27;&#x22; rel=&#x22;noopener&#x22;&#x3E;&#x27; + document.getElementsByTagName(&#x22;title&#x22;)[0].innerHTML + &#x27;&#x3C;/a&#x3E;&#x27;;
+  prompt(&#x22;Hyperlink Code&#x22;, myText); 
+})();
+</pre>
+	<p>Created: Thursday, March 18, 2021</p>
+	<p>Modified: Thursday, March 18, 2021</p>
+
 <h2>My Bookmarks</h2>
 	<p>Link to my list of bookmarks. </p>
 	<ul>
@@ -349,9 +359,10 @@ FileVersionInfo : File:             C:\Program Files\PowerShell\7\pwsh.exe
 	  <li><a href="https://www.w3schools.com/html/html_forms.asp" rel="noopener">HTML Forms | W3Schools</a></li>
 	  <li><a href="https://www.w3schools.com/html/html_classes.asp" rel="noopener">HTML Classes | W3Schools</a></li>
 	  <li><a href="https://www.w3schools.com/tags/att_id.asp" rel="noopener">HTML id Attribute | W3Schools</a></li>
+	  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" rel="noopener">Creating hyperlinks - Learn web development | MDN</a></li>
 	</ul>
 	<p>Created: Saturday, February 6, 2021</p>
-	<p>Modified: Sunday, February 7, 2021</p>
+	<p>Modified: Thursday, March 18, 2021</p>
 
 <h2>GitHub Pages Publishing Steps</h2>
 	<p>Basic git commands for publishing to GitHub Pages. </p>
